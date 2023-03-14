@@ -1,0 +1,297 @@
+{
+	"auto_complete":
+	{
+		"selected_items":
+		[
+			[
+				"dece",
+				"declined"
+			],
+			[
+				"new",
+				"newMeeting"
+			]
+		]
+	},
+	"buffers":
+	[
+		{
+			"file": "/C/Repository/learnWeb3Dao/r1/nftRefProjects/KrumpKingsNfts/scripts/deployV2_nft_erc1155.ts",
+			"settings":
+			{
+				"buffer_size": 3074,
+				"line_ending": "Unix"
+			}
+		},
+		{
+			"file": "Collection1.sol",
+			"settings":
+			{
+				"buffer_size": 6350,
+				"encoding": "UTF-8",
+				"line_ending": "Windows"
+			}
+		}
+	],
+	"build_system": "",
+	"build_system_choices":
+	[
+	],
+	"build_varint": "",
+	"command_palette":
+	{
+		"height": 0.0,
+		"last_filter": "",
+		"selected_items":
+		[
+			[
+				"",
+				"Build: Cancel"
+			]
+		],
+		"width": 0.0
+	},
+	"console":
+	{
+		"height": 0.0,
+		"history":
+		[
+		]
+	},
+	"distraction_free":
+	{
+		"menu_visible": true,
+		"show_minimap": false,
+		"show_open_files": false,
+		"show_tabs": false,
+		"side_bar_visible": false,
+		"status_bar_visible": false
+	},
+	"expanded_folders":
+	[
+		"/C/Repository/learnWeb3Dao/r1/nftRefProjects",
+		"/C/Repository/learnWeb3Dao/r1/nftRefProjects/NftMarketplace-erc1155",
+		"/C/Repository/learnWeb3Dao/r1/nftRefProjects/NftMarketplace-erc1155/Contracts"
+	],
+	"file_history":
+	[
+		"/C/Repository/learnWeb3Dao/r1/nftRefProjects/KrumpKingsNfts/contracts/Collection1.sol",
+		"/C/Repository/learnWeb3Dao/r1/nftRefProjects/KrumpKingsNfts/contracts/customMarketPlace.sol",
+		"/C/Repository/learnWeb3Dao/r1/nftRefProjects/KrumpKingsNfts/hardhat.config.ts",
+		"/C/Repository/htm3.0/BondBank-Frontend/frontend/pages/index.tsx",
+		"/C/Repository/htm3.0/BondBank-Frontend/frontend/styles/Home.module.css",
+		"/C/Repository/htm3.0/BondBank-Frontend/frontend/pages/bondCreatorUI/index.tsx",
+		"/C/Repository/htm3.0/BondBank-Frontend/frontend/pages/buyBond/index.tsx",
+		"/C/Repository/htm3.0/BondBank-Frontend/frontend/pages/createBond/index.tsx",
+		"/C/Repository/htm3.0/BondBank-Frontend/frontend/pages/bondBuyerUI/index.tsx",
+		"/C/Repository/htm3.0/BondBank-Frontend/frontend/pages/siteHeader/SiteHeader.Module.css",
+		"/C/Repository/htm3.0/BondBank-Frontend/frontend/pages/about/index.tsx",
+		"/C/Users/alpha/Downloads/nextjsfractalfantasy_devbranch-devbr/nextjsfractalfantasy_devbranch-devbr/pages/_app.js",
+		"/C/Users/alpha/Downloads/nextjsfractalfantasy_devbranch-devbr/nextjsfractalfantasy_devbranch-devbr/components/navbar.js",
+		"/C/Users/alpha/Downloads/nextjsfractalfantasy_devbranch-devbr/nextjsfractalfantasy_devbranch-devbr/pages/index.js",
+		"/C/Repository/learnWeb3Dao/Javascript/feb22_todoApp/todo_style.css",
+		"/C/Repository/learnWeb3Dao/Javascript/feb22_todoApp/script.js",
+		"/C/Repository/nft_eth720/nft-drop-starter-project-main/nft-drop-starter-project-main/app/src/App.js",
+		"/C/Repository/nft-drop-starter-project-main/nft-drop-starter-project-main/app/package.json",
+		"/C/Repository/learnWeb3Dao/FrontEnd/reactBaseApp/src/App.js",
+		"/C/Repository/feb232022_nft/nft-drop-starter-project-main/nft_starter/app/public/index.html",
+		"/C/Repository/feb232022_nft/nft-drop-starter-project-main/nft_starter/public/index.html",
+		"/C/Repository/learnWeb3Dao/FrontEnd/reactBaseApp/public/robots.txt",
+		"/C/Repository/learnWeb3Dao/FrontEnd/reactBaseApp/public/manifest.json",
+		"/C/Repository/learnWeb3Dao/FrontEnd/reactBaseApp/public/index.html",
+		"/C/Repository/learnWeb3Dao/Backend/simpleNodeJs/package.json",
+		"/C/Repository/learnWeb3Dao/Backend/simpleNodeJs/app/script.js",
+		"/C/Repository/learnWeb3Dao/Backend/simpleNodeJs/app/index.html",
+		"/C/Repository/learnWeb3Dao/Backend/simpleNodeJs/app/todo_style.css",
+		"/C/Repository/learnWeb3Dao/Backend/simpleNodeJs/package-lock.json",
+		"/C/Repository/learnWeb3Dao/FrontEnd/reactBaseApp/src/backend/server.js",
+		"/C/Repository/learnWeb3Dao/Backend/simpleNodeJs/app/server.js"
+	],
+	"find":
+	{
+		"height": 27.0
+	},
+	"find_in_files":
+	{
+		"height": 0.0,
+		"where_history":
+		[
+		]
+	},
+	"find_state":
+	{
+		"case_sensitive": false,
+		"find_history":
+		[
+		],
+		"highlight": true,
+		"in_selection": false,
+		"preserve_case": false,
+		"regex": false,
+		"replace_history":
+		[
+		],
+		"reverse": false,
+		"show_context": true,
+		"use_buffer2": true,
+		"whole_word": false,
+		"wrap": true
+	},
+	"folders":
+	[
+		{
+			"path": "C:\\Repository\\learnWeb3Dao\\r1\\nftRefProjects"
+		}
+	],
+	"groups":
+	[
+		{
+			"selected": 1,
+			"sheets":
+			[
+				{
+					"buffer": 0,
+					"file": "/C/Repository/learnWeb3Dao/r1/nftRefProjects/KrumpKingsNfts/scripts/deployV2_nft_erc1155.ts",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 3074,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								107,
+								122
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/Text/Plain text.tmLanguage",
+							"tab_size": 2,
+							"translate_tabs_to_spaces": true
+						},
+						"translation.x": 0.0,
+						"translation.y": 216.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 1,
+					"type": "text"
+				},
+				{
+					"buffer": 1,
+					"file": "Collection1.sol",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 6350,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								2423,
+								2423
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/Text/Plain text.tmLanguage",
+							"tab_size": 4,
+							"translate_tabs_to_spaces": true
+						},
+						"translation.x": 0.0,
+						"translation.y": 854.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 0,
+					"type": "text"
+				}
+			]
+		}
+	],
+	"incremental_find":
+	{
+		"height": 27.0
+	},
+	"input":
+	{
+		"height": 40.0
+	},
+	"layout":
+	{
+		"cells":
+		[
+			[
+				0,
+				0,
+				1,
+				1
+			]
+		],
+		"cols":
+		[
+			0.0,
+			1.0
+		],
+		"rows":
+		[
+			0.0,
+			1.0
+		]
+	},
+	"menu_visible": true,
+	"output.find_results":
+	{
+		"height": 0.0
+	},
+	"pinned_build_system": "",
+	"project": "",
+	"replace":
+	{
+		"height": 50.0
+	},
+	"save_all_on_build": true,
+	"select_file":
+	{
+		"height": 0.0,
+		"last_filter": "",
+		"selected_items":
+		[
+		],
+		"width": 0.0
+	},
+	"select_project":
+	{
+		"height": 0.0,
+		"last_filter": "",
+		"selected_items":
+		[
+		],
+		"width": 0.0
+	},
+	"select_symbol":
+	{
+		"height": 0.0,
+		"last_filter": "",
+		"selected_items":
+		[
+		],
+		"width": 0.0
+	},
+	"selected_group": 0,
+	"settings":
+	{
+	},
+	"show_minimap": true,
+	"show_open_files": false,
+	"show_tabs": true,
+	"side_bar_visible": true,
+	"side_bar_width": 328.0,
+	"status_bar_visible": true,
+	"template_settings":
+	{
+	}
+}
