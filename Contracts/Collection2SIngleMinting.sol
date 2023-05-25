@@ -6,8 +6,7 @@ import "@openzeppelin/contracts/access/Ownable.sol";
 import "@openzeppelin/contracts/utils/Strings.sol";
 import "@openzeppelin/contracts/utils/Counters.sol";
 
-//0xC2Da16B967D13636F4F88E1Fa02d0d05a49ee5C7
-contract Collection1 is ERC1155, Ownable {
+contract Collection2SingleMinting is ERC1155, Ownable {
     using Counters for Counters.Counter;
     Counters.Counter private _tokenIds;
     Counters.Counter private _nftSold;
@@ -31,7 +30,7 @@ contract Collection1 is ERC1155, Ownable {
     mapping(uint256 => mapping(address => bool)) public member;
     string public name = "Legends of Krump";
     //  _price is the price of one Crypto Dev NFT
-    uint256 public _price = 0.02 ether;
+    uint256 public _price = 2000 gwei;
     struct NftData {
         uint256 totalSupplies;
         uint256 minted;
@@ -39,58 +38,8 @@ contract Collection1 is ERC1155, Ownable {
         address currentOwner;
     }
 
-    //metadata
-    ///ipfs/QmctCeyLnDd7yHvr3x1VZndXFBS2UwHQ2kpnrYUhUHL6r3
-    //set images
-    ///ipfs/QmZqF4PxcvtobxCGQfhd9iJp4pujAmUiNQGA8hqTzew7jD
-
-    //https://ipfs.io/ipfs/QmctCeyLnDd7yHvr3x1VZndXFBS2UwHQ2kpnrYUhUHL6r3/?filename=tokenURI.json
-
-    //https://ipfs.io/ipfs/QmctCeyLnDd7yHvr3x1VZndXFBS2UwHQ2kpnrYUhUHL6r3/?filename=0.json
-    //ipfs://QmUusoGauKGU6EsGDLbqPiZK8PEnHDRYHa4c9yvJxhTHcg/{id}.json
-    //ipfs://QmPQZK5ma6PVAhvZFwxEiHpMdGnEyHR2nZwjC3bkm9rPuY/{id}.json
-
     constructor() ERC1155(baseURI) {}
 
-    function mintInitialTokens(address _operator) public payable onlyOwner {
-        uint256 tokenId = _tokenIds.current();
-        mintByExternal(msg.sender, tokenId, 1, _operator);
-        _tokenIds.increment();
-        //1
-        tokenId = _tokenIds.current();
-        mintByExternal(msg.sender, tokenId, 1, _operator);
-        _tokenIds.increment();
-
-        //2
-        tokenId = _tokenIds.current();
-        mintByExternal(msg.sender, tokenId, 1, _operator);
-        _tokenIds.increment();
-    }
-
-    function initMint() private {
-        // //3
-        // tokenId = _tokenIds.current();
-        // mint(tokenId);
-        // _tokenIds.increment();
-        // //4
-        // tokenId = _tokenIds.current();
-        // mint(tokenId);
-        // _tokenIds.increment();
-        // //5
-        // tokenId = _tokenIds.current();
-        // mint(tokenId);
-        // _tokenIds.increment();
-        // //6
-        // tokenId = _tokenIds.current();
-        // mint(tokenId);
-        // _tokenIds.increment();
-        // //7
-        // tokenId = _tokenIds.current();
-        // mint(tokenId);
-        // _tokenIds.increment();
-    }
-
-    //0xd9145CCE52D386f254917e481eB44e9943F39138
     // to Put NFT to Opensea
     function uri(
         uint256 _tokenId
@@ -114,45 +63,12 @@ contract Collection1 is ERC1155, Ownable {
             minted[index] + 1 <= supplies[index],
             "All the NFT have been minted"
         );
-        require(msg.value == _price, "Ether sent is not correct");
+        require(msg.value >= _price, "Ether sent is not correct");
         _mint(msg.sender, _tokenId, 1, "");
         setApprovalForAll(address(this), true);
 
         // "" is data which is set empty
         minted[index] += 1;
-        member[_tokenId][msg.sender] = true;
-    }
-
-    //@dev: obsolete function
-    function mint(uint256 _tokenId) public payable {
-        require(nftTracker[_tokenId].minted == 0, " NFT have been minted");
-        // require(msg.value == _price, "Ether sent is not correct");
-
-        // nftTracker[_tokenId] = NftData(1, 0);
-        // _mint(msg.sender, _tokenId, 1, "");
-        // "" is data which is set empty
-
-        nftTracker[_tokenId].minted = 1;
-        member[_tokenId][msg.sender] = true;
-    }
-
-    //to be used By cross-mint, latest
-    function mintByExternal(
-        address _to,
-        uint256 _tokenId,
-        uint quantity,
-        address _operator
-    ) public payable {
-        require(nftTracker[_tokenId].minted == 0, " NFT have been minted");
-        // require(msg.value == _price, "Ether sent is not correct");
-
-        nftTracker[_tokenId] = NftData(1, 0, _operator, address(0x00));
-        _mint(_to, _tokenId, quantity, "");
-        setApprovalForAll(_operator, true);
-        _tokenIds.increment();
-        // "" is data which is set empty
-        nftTracker[_tokenId].currentOwner = _to;
-        nftTracker[_tokenId].minted = 1;
         member[_tokenId][msg.sender] = true;
     }
 
@@ -164,10 +80,11 @@ contract Collection1 is ERC1155, Ownable {
     ) public payable {
         uint256 _tokenId = _tokenIds.current();
         require(nftTracker[_tokenId].minted == 0, " NFT have been minted");
-        // require(msg.value == _price, "Ether sent is not correct");
+        require(msg.value >= _price, "Ether sent is not correct");
 
         nftTracker[_tokenId] = NftData(1, 0, _operator, address(0x00));
         _mint(_to, _tokenId, quantity, "");
+        _tokenIds.increment();
         setApprovalForAll(_operator, true);
         // "" is data which is set empty
         nftTracker[_tokenId].currentOwner = _to;
